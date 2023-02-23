@@ -1,44 +1,29 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class TapeEquilibrium
-{
-    public int solution(int[] a)
     {
-        final int size = a.length;
-        List<Integer> difference = new ArrayList<>();
-        for (int i = 0; i < size - 1; i++) {
-            int size1 = i + 1;
-            int size2 = size - size1;
-
-            int[] array1 = new int[size1];
-            int[] array2 = new int[size2];
-
-            System.arraycopy(a, 0, array1, 0, size1);
-            System.arraycopy(a, i + 1, array2, 0, size2);
-
-            int sum1 = Arrays.stream(array1).sum();
-            int sum2 = Arrays.stream(array2).sum();
-
-            int diffSum = sum1 - sum2;
-
-            if (diffSum < 0) {
-                diffSum = sum2 - sum1;
+        public static void main(final String[] args)
+            {
+                final TapeEquilibrium tapeEquilibrium = new TapeEquilibrium();
+                final int num = tapeEquilibrium.solution(new int[]{3, 1, 2, 4, 3});
+                System.out.println(num);
             }
-            difference.add(diffSum);
-        }
-        Collections.sort(difference);
-        return difference.get(0);
+
+        public int solution(final int[] a)
+            {
+                final int size = a.length;
+                final int sum = Arrays.stream(a).sum();
+                int diffNum = Integer.MAX_VALUE;
+                int currentSum = 0;
+                for (int i = 0; i < size - 1; i++) {
+                    currentSum += a[i];
+                    final int diff = Math.abs(sum - (2 * currentSum));
+                    if (diff < diffNum) {
+                        diffNum = diff;
+                    }
+                }
+                return diffNum;
+            }
     }
-
-    public static void main(String[] args)
-    {
-//        TapeEquilibrium tapeEquilibrium = new TapeEquilibrium();
-//        int num = tapeEquilibrium.solution(new int[] {3, 1, 2, 4, 3});
-//        System.out.println(num);
-            }
-}
