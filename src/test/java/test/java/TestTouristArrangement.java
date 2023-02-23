@@ -4,11 +4,13 @@ import org.example.TouristArrangement;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestTouristArrangement {
+public class TestTouristArrangement
+{
     TouristArrangement touristArrangement = new TouristArrangement();
 
     @Test
-    public void TestSample(){
+    public void TestSample()
+    {
         int[] inputArray = new int[] {3, 2, 4, 1};
         int actual = touristArrangement.solution(inputArray);
         int expected = 3;
@@ -16,7 +18,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void TestOneTouristOneRoom(){
+    public void TestOneTouristOneRoom()
+    {
         int[] inputArray = new int[] {1};
         int actual = touristArrangement.solution(inputArray);
         int expected = 1;
@@ -24,7 +27,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void TestOneTouristTwoRoom(){
+    public void TestOneTouristTwoRoom()
+    {
         int[] inputArray = new int[] {2};
         int actual = touristArrangement.solution(inputArray);
         int expected = 1;
@@ -32,7 +36,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void TestTwoTouristTwoRoom(){
+    public void TestTwoTouristTwoRoom()
+    {
         int[] inputArray = new int[] {1, 1};
         int actual = touristArrangement.solution(inputArray);
         int expected = 2;
@@ -40,7 +45,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void TestTwoTouristOneRoom(){
+    public void TestTwoTouristOneRoom()
+    {
         int[] inputArray = new int[] {5, 10};
         int actual = touristArrangement.solution(inputArray);
         int expected = 1;
@@ -48,7 +54,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void TestThreeTouristThreeRoom(){
+    public void TestThreeTouristThreeRoom()
+    {
         int[] inputArray = new int[] {1, 1, 1};
         int actual = touristArrangement.solution(inputArray);
         int expected = 3;
@@ -56,7 +63,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void TestThreeTouristOneRoom(){
+    public void TestThreeTouristOneRoom()
+    {
         int[] inputArray = new int[] {3, 3, 3};
         int actual = touristArrangement.solution(inputArray);
         int expected = 1;
@@ -64,7 +72,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void Test1(){
+    public void Test1()
+    {
         int[] inputArray = new int[] {3, 2, 4, 5, 1, 1, 1, 1000};
         int actual = touristArrangement.solution(inputArray);
         int expected = 5;
@@ -72,7 +81,8 @@ public class TestTouristArrangement {
     }
 
     @Test
-    public void Test2(){
+    public void Test2()
+    {
         int[] inputArray = new int[] {1, 100};
         int actual = touristArrangement.solution(inputArray);
         int expected = 2;

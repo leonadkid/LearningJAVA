@@ -28,14 +28,15 @@ package org.example;
  * X, Y and D are integers within the range [1..1,000,000,000];
  * X ≤ Y.
  * */
-public class FrogJmp {
-    public static int Solution(int X, int Y, int D){
-        int dist = Y - X;
-        int step = dist/D;
-        if( dist % D != 0){
+public class FrogJmp
+{
+    public int Solution(int x, int y, int d)
+    {
+        int dist = y - x;
+        int step = dist / d;
+        if (dist % d != 0) {
             step = step + 1;
         }
         return step;
     }
-
 }

@@ -28,22 +28,24 @@ import java.util.Arrays;
  the elements of A are all distinct;
  each element of array A is an integer within the range [1..(N + 1)].
  * */
-public class PermMissingElem {
-    public static int Solution(int[] A){
-        Arrays.sort(A);
-        int size = A.length;
-        if(size == 0 || A[0] != 1){
+public class PermMissingElem
+{
+    public int Solution(int[] a)
+    {
+        Arrays.sort(a);
+        int size = a.length;
+        if (size == 0 || a[0] != 1) {
             return 1;
         }
-        int diffNum = A[0];
-        for(int i = 0; i < size-1; i++){
-            if(A[i+1] != A[i]+1){
-                diffNum = A[i] + 1;
+        int diffNum = a[0];
+        for (int i = 0; i < size - 1; i++) {
+            if (a[i + 1] != a[i] + 1) {
+                diffNum = a[i] + 1;
                 return diffNum;
             }
         }
-        if(diffNum == 1){
-            diffNum = A[size-1] + 1;
+        if (diffNum == 1) {
+            diffNum = a[size - 1] + 1;
         }
         return diffNum;
     }

@@ -3,8 +3,10 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CameraPassed {
-    public int solution(String s) {
+public class CameraPassed
+{
+    public int solution(String s)
+    {
         if (s == null || s.isEmpty()) {
             return 0;
         }

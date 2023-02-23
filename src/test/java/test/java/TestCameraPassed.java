@@ -4,12 +4,13 @@ import org.example.CameraPassed;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-
-public class TestCameraPassed {
+public class TestCameraPassed
+{
     private CameraPassed cameraPassed = new CameraPassed();
 
     @Test
-    public void testSample(){
+    public void testSample()
+    {
         String inPutString = ".<.><.";
         int actual = cameraPassed.solution(inPutString);
         int expected = 4;
@@ -18,7 +19,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testSingleCharsDot(){
+    public void testSingleCharsDot()
+    {
         String inPutString = ".";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -27,7 +29,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testSingleCharsRight(){
+    public void testSingleCharsRight()
+    {
         String inPutString = ">";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -36,7 +39,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testSingleCharsLeft(){
+    public void testSingleCharsLeft()
+    {
         String inPutString = "<";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -45,7 +49,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testTwoCharsDot(){
+    public void testTwoCharsDot()
+    {
         String inPutString = "..";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -54,7 +59,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testTwoCharsRight(){
+    public void testTwoCharsRight()
+    {
         String inPutString = ">>";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -63,7 +69,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testTwoCharsLeft(){
+    public void testTwoCharsLeft()
+    {
         String inPutString = "<<";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -72,7 +79,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeCharsDot(){
+    public void testThreeCharsDot()
+    {
         String inPutString = "...";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -81,7 +89,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeCharsRight(){
+    public void testThreeCharsRight()
+    {
         String inPutString = ">>>";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -90,7 +99,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeCharsLeft(){
+    public void testThreeCharsLeft()
+    {
         String inPutString = "<<<";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -99,7 +109,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeChars1(){
+    public void testThreeChars1()
+    {
         String inPutString = ".<<";
         int actual = cameraPassed.solution(inPutString);
         int expected = 2;
@@ -108,7 +119,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeChars2(){
+    public void testThreeChars2()
+    {
         String inPutString = ".>>";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -117,7 +129,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeChars3(){
+    public void testThreeChars3()
+    {
         String inPutString = ">..";
         int actual = cameraPassed.solution(inPutString);
         int expected = 2;
@@ -126,7 +139,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeChars4(){
+    public void testThreeChars4()
+    {
         String inPutString = "><<";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -135,7 +149,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeChars5(){
+    public void testThreeChars5()
+    {
         String inPutString = "<..";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
@@ -144,7 +159,8 @@ public class TestCameraPassed {
     }
 
     @Test
-    public void testThreeChars6(){
+    public void testThreeChars6()
+    {
         String inPutString = "<>>";
         int actual = cameraPassed.solution(inPutString);
         int expected = 0;
