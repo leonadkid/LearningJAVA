@@ -44,21 +44,14 @@ import java.util.Arrays;
 
 public class FrogRiverOne
 {
-    public static void main(String[] args)
-    {
-        FrogRiverOne frogRiverOne = new FrogRiverOne();
-        int num = frogRiverOne.Solution(5, new int[]{3});
-        System.out.println(num);
-    }
-
     public int Solution(final int position, final int[] leaves)
     {
         int time = -1;
-        int[] steps = new int[position];
+        final int[] steps = new int[position];
         Arrays.fill(steps, -1);
-        int leaveSize = leaves.length;
+        final int leaveSize = leaves.length;
         for (int counter = 0; counter < leaveSize; counter++) {
-            int currentPosition = leaves[counter] - 1;
+            final int currentPosition = leaves[counter] - 1;
             if (steps[currentPosition] == -1) {
                 steps[currentPosition] = counter;
             }
