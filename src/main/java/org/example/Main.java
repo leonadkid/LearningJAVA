@@ -1,9 +1,8 @@
 package org.example;
 
-class Main
+public class Main
 {
-    public void main(String[] args)
+    public static void main(final String[] args)
     {
-        System.out.println("Hello world!");
     }
 }

@@ -44,7 +44,8 @@ public class PermCheck
         if (ints[0] != 1) {
             result = 0;
             return result;
-        } else if (ints.length == 1) {
+        }
+        else if (ints.length == 1) {
             return result;
         }
         for (int counter = 0; counter < ints.length - 1; counter++) {
