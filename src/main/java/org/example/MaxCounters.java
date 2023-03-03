@@ -4,12 +4,6 @@ import java.util.Arrays;
 
 public class MaxCounters
 {
-    public static void main(final String[] args)
-    {
-        final MaxCounters maxCounters = new MaxCounters();
-        maxCounters.Solution(2, new int[]{1, 3, 2});
-    }
-
     public int[] Solution(final int i, final int[] ints)
     {
         final int[] result = new int[i];

@@ -52,13 +52,13 @@ In your solution, focus on correctness. The performance of your solution will no
  */
 public class RotateTime
 {
-    public int solution(int[] a, int[] b)
+    public int solution(final int[] a, final int[] b)
     {
         int rotateTime = 0;
         int result = -1;
 
         final int totalPeople = a.length;
-        List<Integer> temp = new ArrayList<>(Arrays.stream(b).boxed().collect(Collectors.toList()));
+        final List<Integer> temp = new ArrayList<>(Arrays.stream(b).boxed().collect(Collectors.toList()));
         for (int i = 0; i < totalPeople; i++) {
             rotate(temp, i);
             int counter = 0;
@@ -76,14 +76,5 @@ public class RotateTime
             rotateTime++;
         }
         return result;
-    }
-
-    private static void isOkay(List<Integer> temp, int[] a)
-    {
-    }
-
-    public static void main(String[] args)
-    {
-        //System.out.println(solution(new int[] {1, 3, 5, 2, 8, 7}, new int[] {7, 1, 9, 8, 5, 7}));
     }
 }

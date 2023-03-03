@@ -4,13 +4,6 @@ import java.util.Arrays;
 
 public class TapeEquilibrium
     {
-        public static void main(final String[] args)
-            {
-                final TapeEquilibrium tapeEquilibrium = new TapeEquilibrium();
-                final int num = tapeEquilibrium.solution(new int[]{3, 1, 2, 4, 3});
-                System.out.println(num);
-            }
-
         public int solution(final int[] a)
             {
                 final int size = a.length;
