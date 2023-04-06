@@ -9,7 +9,7 @@ public class TestBinaryGap
     @Test
     public void test()
     {
-        BinaryGap binaryGap = new BinaryGap();
+        final BinaryGap binaryGap = new BinaryGap();
 
         //main function validation
         Assertions.assertEquals(2, binaryGap.solution(9)); //1001
@@ -24,6 +24,7 @@ public class TestBinaryGap
         Assertions.assertEquals(0, binaryGap.solution(0)); //0
 
         Assertions.assertEquals(0, binaryGap.solution(2)); //2
-        Assertions.assertEquals(0, binaryGap.solution(-2)); //-2
+        Assertions.assertEquals(1, binaryGap.solution(-2)); //-2
+        Assertions.assertTrue(false);
     }
 }

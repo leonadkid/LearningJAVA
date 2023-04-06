@@ -3,16 +3,16 @@ import java.util.ArrayList;
 
 public class BinaryGap
 {
-    public int solution(int n)
+    public int solution(final int n)
     {
         int binaryGap = 0;
         int maxGap = 0;
-        String binaryString = Integer.toBinaryString(n);
-        char[] characters = binaryString.toCharArray();
+        final String binaryString = Integer.toBinaryString(n);
+        final char[] characters = binaryString.toCharArray();
         System.out.println("Binary number of " + n + " is ");
         System.out.println(characters);
 
-        ArrayList<Integer> charsIndex = new ArrayList<>();
+        final ArrayList<Integer> charsIndex = new ArrayList<>();
         for (int i = 0; i < characters.length; i++) {
             if (characters[i] == '1') {
                 charsIndex.add(i);
@@ -27,4 +27,5 @@ public class BinaryGap
         }
         return maxGap;
     }
+
 }
