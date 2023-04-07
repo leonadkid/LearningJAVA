@@ -27,5 +27,4 @@ public class BinaryGap
         }
         return maxGap;
     }
-
 }

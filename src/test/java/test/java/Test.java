@@ -1,11 +1,10 @@
 package test.java;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
-public class test
+public class Test
 {
-    @Test
+    @org.junit.jupiter.api.Test
     public void test()
     {
         Assertions.assertTrue(false);
